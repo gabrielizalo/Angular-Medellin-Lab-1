@@ -1,14 +1,23 @@
 <div class="splash-container">
   <div class="splash">
+
     <h1 class="splash-head">{{ title }}</h1>
+
     <form class="pure-form">
       <p>
+        <span class="splash-subhead">I wanna know if...</span>
         <label for="question">
-          <input type="text" id="question">
+          <input type="text" id="question" name="question" [(ngModel)]="question"/>
         </label>
-        <a href="http://purecss.io" class="pure-button pure-button-primary">Dímelo</a>
+        <a href="#" class="pure-button pure-button-primary" (click)="getAnswer()">Tell me</a>
       </p>
-      <img src="{{response.image}}" alt="{{response.answer}}"/>
     </form>
+
+    <img src="{{response.image}}" alt="{{response.answer}}" id="myImage" *ngIf="response;else loading"/>
+    <ng-template #loading><img src="{{loadingGif}}" alt="" class="loading" /></ng-template>
+    <img src="./assets/loading.gif" alt="" hidden/>
+
   </div>
 </div>
+
+

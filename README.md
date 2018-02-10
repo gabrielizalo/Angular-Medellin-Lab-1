@@ -1,5 +1,7 @@
 # AngularMedellinLab1
-My personal exercise of the Angular Lab #1 of Angular Medellin Meetup
+My personal exercise of the Angular Lab #1 of [_Angular Medellin Meetup_](https://www.meetup.com/Angular-Medellin/)
+Visit the final example at the [**GibHub Page**](https://gabrielizalo.github.io/Angular-Medellin-Lab1/).
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
 
